@@ -1,0 +1,32 @@
+{
+    "name": "Example Serial Write",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "radio": "*",
+        "microphone": "*",
+        "gatorEnvironment": "github:sparkfun/pxt-gator-environment#v1.0.13",
+        "gatorSoil": "github:sparkfun/pxt-gator-soil#v1.0.3",
+        "gatorUV": "github:sparkfun/pxt-gator-UV#v0.1.2"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "branch": "v4.0.17",
+        "tag": "v4.0.17",
+        "commits": "https://github.com/microsoft/pxt-microbit/commits/e18cbd92585dcdba1714bda754fe361ca50a3f3f",
+        "target": "4.0.18",
+        "pxt": "7.0.13",
+        "targetId": "microbit"
+    },
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "blocksprj"
+}

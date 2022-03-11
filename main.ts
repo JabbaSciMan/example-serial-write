@@ -1,0 +1,17 @@
+input.onButtonPressed(Button.A, function () {
+    serial.writeLine("Moisture")
+    serial.writeLine("" + (gatorSoil.moisture(AnalogPin.P0, GatorSoilType.Moisture, DigitalPin.P0)))
+    serial.writeLine("V2 light level")
+    serial.writeLine("" + (input.lightLevel()))
+    serial.writeLine("")
+    serial.writeLine("")
+    basic.pause(1000)
+})
+gatorUV.begin()
+serial.redirectToUSB()
+basic.forever(function () {
+    serial.writeLine("V2 temperature")
+    serial.writeLine("" + (input.temperature()))
+    serial.writeLine("UV")
+    serial.writeLine("" + (gatorUV.UV()))
+})
